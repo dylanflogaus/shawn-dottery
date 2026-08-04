@@ -1396,6 +1396,12 @@ input {
   margin-bottom: var(--space-4);
 }
 
+.page-hero--detail .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .page-hero__lead {
   font-size: var(--text-lg);
   color: var(--muted);
@@ -1650,7 +1656,8 @@ input {
 }
 
 .back-link {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 0.4rem;
   margin-bottom: var(--space-5);
