@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "shawn-dottery",
+  "compatibility_date": "2026-03-01",
+  // Static site served from project root via Workers Assets.
+  // Deploy later with: npx wrangler deploy
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

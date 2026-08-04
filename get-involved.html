@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Involved | Shawn Dottery for Delaware</title>
+    <meta
+      name="description"
+      content="Volunteer with Shawn Dottery's campaign - door knocking, phone banking, yard signs, events, and more."
+    />
+    <meta name="theme-color" content="#12233f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,550;0,9..144,650;1,9..144,450;1,9..144,550&family=Libre+Franklin:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-root="" data-nav="involved">
+    <div id="site-chrome"></div>
+
+    <main id="top">
+      <section class="page-hero">
+        <div class="container reveal">
+          <p class="section-label">Take Action</p>
+          <h1>Get Involved</h1>
+          <p class="page-hero__lead">
+            This campaign belongs to you. Volunteer, join the email list, or help put a yard sign in your neighborhood.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section content-section--cream">
+        <div class="container two-col">
+          <div class="form-panel reveal">
+            <h2>Volunteer with Shawn</h2>
+            <p>Tell us how you&rsquo;d like to help and we&rsquo;ll match you with a way to make a difference.</p>
+
+            <form id="volunteer-form" data-form-stub data-success-message="Thanks for signing up to volunteer. We'll be in touch soon." novalidate>
+              <div class="form-grid form-grid--2">
+                <div class="form-field">
+                  <label for="vol-name">Full name</label>
+                  <input id="vol-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="vol-email">Email</label>
+                  <input id="vol-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="vol-phone">Phone <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+                  <input id="vol-phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="vol-zip">ZIP code</label>
+                  <input id="vol-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" />
+                </div>
+              </div>
+
+              <div class="form-field" style="margin-top: var(--space-5)">
+                <label>How would you like to help?</label>
+                <div class="checkbox-grid" style="margin-top: var(--space-3)">
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="door-knocking" /> Door knocking</label>
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="phone-banking" /> Phone banking</label>
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="events" /> Events</label>
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="yard-signs" /> Yard signs</label>
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="social-media" /> Social media</label>
+                  <label class="checkbox-item"><input type="checkbox" name="interest" value="data-entry" /> Data entry</label>
+                </div>
+              </div>
+
+              <div class="form-field" style="margin-top: var(--space-5)">
+                <label for="vol-message">Anything else we should know?</label>
+                <textarea id="vol-message" name="message"></textarea>
+              </div>
+
+              <div style="margin-top: var(--space-5)">
+                <button class="btn btn-primary" type="submit">Sign Up to Volunteer</button>
+              </div>
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="reveal">
+            <div class="info-card">
+              <h3>Ways to help</h3>
+              <p>From a few hours on a Saturday to hosting a yard sign, every contribution moves this campaign forward.</p>
+            </div>
+            <div class="info-card">
+              <h3>Attend an event</h3>
+              <p><a href="events.html">See upcoming meet and greets and listening sessions</a></p>
+            </div>
+            <div class="info-card">
+              <h3>Donate</h3>
+              <p><a href="donate.html">Support the campaign with a contribution</a></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section signup" id="join">
+        <div class="container reveal">
+          <p class="section-label">Join the Campaign</p>
+          <h2 class="section-title">Stay in the loop</h2>
+          <p class="signup__lead">
+            Get volunteer updates, event notices, and the occasional note from Shawn. No noise &ndash; just the work ahead.
+          </p>
+
+          <form class="signup-form" id="signup-form" data-form-stub novalidate>
+            <label class="sr-only" for="signup-name">Full name</label>
+            <input id="signup-name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+
+            <div class="signup-form__row">
+              <label class="sr-only" for="signup-email">Email address</label>
+              <input
+                id="signup-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="submit">Join Us</button>
+            </div>
+            <p class="signup-form__note">By signing up, you agree to receive campaign updates. You can unsubscribe anytime.</p>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-slot"></div>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

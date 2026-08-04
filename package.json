@@ -1,0 +1,12 @@
+{
+  "name": "shawn-dottery",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Shawn Dottery campaign website – Delaware State Representative, 3rd District",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "preview": "npx --yes serve -l 8080",
+    "cf:dev": "npx --yes wrangler dev",
+    "deploy": "npx --yes wrangler deploy"
+  }
+}
