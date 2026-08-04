@@ -1,0 +1,77 @@
+{
+  "exported_at": "2026-08-03T21:49:21.404401-04:00",
+  "events": [
+    {
+      "slug": "coffee-with-shawn",
+      "title": "Coffee with Shawn",
+      "category": "Meet & Greet",
+      "start_at": "2026-09-12T09:00:00-04:00",
+      "month_abbr": "Sep",
+      "day": 12,
+      "time_display": "9:00 AM",
+      "location": "Wilmington",
+      "description": "Morning conversation at a local cafe. Come say hello and share what matters in your neighborhood.",
+      "featured": true
+    },
+    {
+      "slug": "district-listening-session",
+      "title": "District Listening Session",
+      "category": "Community",
+      "start_at": "2026-09-27T18:30:00-04:00",
+      "month_abbr": "Sep",
+      "day": 27,
+      "time_display": "6:30 PM",
+      "location": "3rd District",
+      "description": "An open forum on cost of living and public safety. Your stories help shape the work ahead.",
+      "featured": true
+    },
+    {
+      "slug": "door-knocking-kickoff",
+      "title": "Door Knocking Kickoff",
+      "category": "Volunteer",
+      "start_at": "2026-10-04T10:00:00-04:00",
+      "month_abbr": "Oct",
+      "day": 4,
+      "time_display": "10:00 AM",
+      "location": "Wilmington",
+      "description": "Join the team for our first neighborhood canvass. Training provided. Comfortable shoes recommended.",
+      "featured": false
+    },
+    {
+      "slug": "founding-100-dinner",
+      "title": "Founding 100 Dinner",
+      "category": "Fundraiser",
+      "start_at": "2026-10-10T18:00:00-04:00",
+      "month_abbr": "Oct",
+      "day": 10,
+      "time_display": "6:00 PM",
+      "location": "Private venue",
+      "description": "Join early supporters for an evening that launches the next stretch of the campaign.",
+      "featured": true
+    },
+    {
+      "slug": "saturday-with-seniors",
+      "title": "Saturday with Seniors",
+      "category": "Meet & Greet",
+      "start_at": "2026-10-18T11:00:00-04:00",
+      "month_abbr": "Oct",
+      "day": 18,
+      "time_display": "11:00 AM",
+      "location": "Community center",
+      "description": "Conversation on fixed incomes, neighborhood safety, and what dignity in retirement should look like.",
+      "featured": false
+    },
+    {
+      "slug": "get-out-the-vote-rally",
+      "title": "Get Out the Vote Rally",
+      "category": "GOTV",
+      "start_at": "2026-11-01T14:00:00-05:00",
+      "month_abbr": "Nov",
+      "day": 1,
+      "time_display": "2:00 PM",
+      "location": "3rd District",
+      "description": "Final weekend push before Election Day. Signs, phones, and neighbors ready to turn out the vote.",
+      "featured": false
+    }
+  ]
+}

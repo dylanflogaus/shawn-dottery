@@ -9,6 +9,7 @@
       content="Upcoming campaign events for Shawn Dottery - meet and greets, listening sessions, and fundraisers in Delaware's 3rd District."
     />
     <meta name="theme-color" content="#12233f" />
+    <meta name="campaign-api" content="http://localhost:8000" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body data-root="" data-nav="events">
+  <body data-root="" data-nav="events" data-api-base="http://localhost:8000">
     <div id="site-chrome"></div>
 
     <main id="top">
@@ -33,126 +34,8 @@
 
       <section class="content-section content-section--cream">
         <div class="container">
-          <div class="event-list">
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Sep</span>
-                <span>12</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">Meet &amp; Greet</p>
-                <h3>Coffee with Shawn</h3>
-                <div class="event-row__meta">
-                  <span>9:00 AM</span>
-                  <span>Wilmington</span>
-                </div>
-                <p>Morning conversation at a local cafe. Come say hello and share what matters in your neighborhood.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Sep</span>
-                <span>27</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">Community</p>
-                <h3>District Listening Session</h3>
-                <div class="event-row__meta">
-                  <span>6:30 PM</span>
-                  <span>3rd District</span>
-                </div>
-                <p>An open forum on cost of living and public safety. Your stories help shape the work ahead.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Oct</span>
-                <span>4</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">Volunteer</p>
-                <h3>Door Knocking Kickoff</h3>
-                <div class="event-row__meta">
-                  <span>10:00 AM</span>
-                  <span>Wilmington</span>
-                </div>
-                <p>Join the team for our first neighborhood canvass. Training provided. Comfortable shoes recommended.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Oct</span>
-                <span>10</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">Fundraiser</p>
-                <h3>Founding 100 Dinner</h3>
-                <div class="event-row__meta">
-                  <span>6:00 PM</span>
-                  <span>Private venue</span>
-                </div>
-                <p>Join early supporters for an evening that launches the next stretch of the campaign.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Oct</span>
-                <span>18</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">Meet &amp; Greet</p>
-                <h3>Saturday with Seniors</h3>
-                <div class="event-row__meta">
-                  <span>11:00 AM</span>
-                  <span>Community center</span>
-                </div>
-                <p>Conversation on fixed incomes, neighborhood safety, and what dignity in retirement should look like.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-row reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Nov</span>
-                <span>1</span>
-              </div>
-              <div class="event-row__body">
-                <p class="meta">GOTV</p>
-                <h3>Get Out the Vote Rally</h3>
-                <div class="event-row__meta">
-                  <span>2:00 PM</span>
-                  <span>3rd District</span>
-                </div>
-                <p>Final weekend push before Election Day. Signs, phones, and neighbors ready to turn out the vote.</p>
-                <div class="event-row__actions">
-                  <button class="btn btn-secondary" type="button" data-rsvp>RSVP</button>
-                  <span data-rsvp-status></span>
-                </div>
-              </div>
-            </article>
+          <div id="events-list" class="event-list" aria-live="polite">
+            <p class="events-empty">Loading upcoming events&hellip;</p>
           </div>
         </div>
       </section>
@@ -172,6 +55,7 @@
 
     <div id="site-footer-slot"></div>
     <script src="assets/js/layout.js"></script>
+    <script src="assets/js/events.js"></script>
     <script src="assets/js/main.js" defer></script>
   </body>
 </html>

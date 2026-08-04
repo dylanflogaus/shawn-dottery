@@ -9,6 +9,7 @@
       content="Shawn Dottery, Republican for Delaware State Representative – 3rd District. Working hard. Staying humble. Fighting for you."
     />
     <meta name="theme-color" content="#12233f" />
+    <meta name="campaign-api" content="http://localhost:8000" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body data-root="" data-nav="home">
+  <body data-root="" data-nav="home" data-api-base="http://localhost:8000">
     <div id="site-chrome"></div>
 
     <main id="top">
@@ -295,36 +296,8 @@
             </a>
           </div>
 
-          <div class="card-grid">
-            <article class="event-card reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Sep</span>
-                <span>12</span>
-              </div>
-              <p class="meta">Meet &amp; Greet</p>
-              <h3>Coffee with Shawn</h3>
-              <p>Morning conversation at a local Wilmington cafe. Come say hello and share what matters in your neighborhood.</p>
-            </article>
-
-            <article class="event-card reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Sep</span>
-                <span>27</span>
-              </div>
-              <p class="meta">Community</p>
-              <h3>District Listening Session</h3>
-              <p>An open forum on cost of living and public safety. Your stories help shape the work ahead.</p>
-            </article>
-
-            <article class="event-card reveal">
-              <div class="event-card__date" aria-hidden="true">
-                <span>Oct</span>
-                <span>10</span>
-              </div>
-              <p class="meta">Fundraiser</p>
-              <h3>Founding 100 Dinner</h3>
-              <p>Join early supporters for an evening that launches the next stretch of the campaign.</p>
-            </article>
+          <div id="featured-events" class="card-grid" aria-live="polite">
+            <p class="events-empty">Loading upcoming events&hellip;</p>
           </div>
         </div>
       </section>
@@ -405,6 +378,7 @@
     <div id="site-footer-slot"></div>
 
     <script src="assets/js/layout.js"></script>
+    <script src="assets/js/events.js"></script>
     <script src="assets/js/main.js" defer></script>
   </body>
 </html>

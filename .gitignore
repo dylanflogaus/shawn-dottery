@@ -6,3 +6,12 @@ node_modules/
 dist/
 .env
 .env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+backend/staticfiles/
+.venv/
+venv/
+*.sqlite3

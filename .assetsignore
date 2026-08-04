@@ -8,6 +8,11 @@
 *.log
 .gitignore
 .assetsignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+backend
+**/__pycache__
 wrangler.jsonc
 package.json
 package-lock.json

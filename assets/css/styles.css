@@ -1837,3 +1837,92 @@ input {
   color: var(--muted);
   margin-bottom: var(--space-6);
 }
+
+.events-empty {
+  color: var(--muted);
+  font-size: var(--text-base);
+  margin: 0;
+}
+
+body.rsvp-modal-open {
+  overflow: hidden;
+}
+
+.rsvp-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+}
+
+.rsvp-modal[hidden] {
+  display: none;
+}
+
+.rsvp-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 35, 63, 0.55);
+}
+
+.rsvp-modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 28rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: var(--space-6);
+}
+
+.rsvp-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.85rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.rsvp-modal__close:hover {
+  color: var(--navy);
+}
+
+.rsvp-modal__event {
+  color: var(--muted);
+  font-size: var(--text-sm);
+  margin: 0 0 var(--space-4);
+}
+
+.rsvp-modal__form {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.rsvp-modal__form input[type="text"],
+.rsvp-modal__form input[type="email"] {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  color: var(--navy);
+  font: inherit;
+  padding: 0.85rem 1rem;
+}
+
+.rsvp-modal__form input:focus {
+  outline: 2px solid var(--brass);
+  outline-offset: 1px;
+}
+
+.rsvp-modal__form .form-status {
+  min-height: 1.25rem;
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--red);
+}
